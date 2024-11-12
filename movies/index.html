@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul>
+                <li>
+                    <p class="movies-link">Movies</p>
+                </li>
+                <!-- <li>
+                    <p class="watch-link">Watchlist</p>
+                </li> -->
+            </ul>
+        </div>
+    </header>
+    <section class="search">
+        <div class="container">
+            <div class="search-content">
+                <div class="search-title">
+                    Look for any movies
+                </div>
+                <div class="search-input">
+                    <input type="text" placeholder="movie title" id="searchBar">
+                    <div class="search-button" onclick="searchMovies()">
+                        Search
+                    </div>
+                </div>
+                <div class="search-sort">
+                    <select name="sort" id="search-sort">
+                        <option value="Popularity">By popularity</option>
+                        <option value="Rating">By rating</option>
+                        <option value="Upcoming">Upcoming</option>
+                    </select>
+                    <div class="sort-button" onclick="getMovies()">
+                        Sort
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="movies">
+        <div class="container">
+            <div class="movies-grid">
+
+            </div>
+        </div>
+    </section>
+    <section class="watchlist">
+        <div class="container">
+            <div class="watchlist-title">
+                Watchlist
+            </div>
+            <div class="watchlist-grid">
+                <div class="watchlist-card">
+                    <img src="../assets/car.png" alt="" class="watchlist-img">
+                    <div class="watchlist-text">
+                        <div class="watchlist-name">
+                            poopoo
+                        </div>
+                        <div class="watchlist-date">
+                            01/01/2024
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="details">
+        <div class="container">
+            <div class="details-box">
+                <div class="details-wrapper">
+                    <div class="details-left">
+                        <div class="details-title">
+                            The Wild Robot
+                        </div>
+                        <div class="details-rating">
+                            Rating: 4.5/5
+                        </div>
+                        <div class="details-time">
+                            <img src="../assets/clock.svg" alt="">
+                            <p>1h 35min</p>
+                        </div>
+                        <div class="details-date">
+                            Release date: 01/01/2024
+                        </div>
+                        <div class="details-synopsis">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non aut perspiciatis? Iure laboriosam, dolorum voluptas aliquam odio ullam doloremque, libero nulla tenetur enim labore vitae quasi, autem eligendi deserunt?
+                        </div>
+                    </div>
+                    <img src="../assets/car.png" alt="" class="details-poster">
+                </div>
+                <div class="cast-and-crew">
+                    <div class="cast">
+                        <h1>Cast:</h1>
+                        <ul>
+                            <!-- <li>Cast 1 as Character 1</li>
+                            <li>Cast 1 as Character 1</li>
+                            <li>Cast 1 as Character 1</li>
+                            <li>Cast 1 as Character 1</li>
+                            <li>Cast 1 as Character 1</li> -->
+                        </ul>
+                    </div>
+                    <div class="crew">
+                        <h1>Crew:</h1>
+                        <ul>
+                            <!-- <li>Director: Director 1</li>
+                            <li>Director: Director 1</li>
+                            <li>Director: Director 1</li>
+                            <li>Director: Director 1</li>
+                            <li>Director: Director 1</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

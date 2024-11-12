@@ -1,0 +1,328 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    /* border: 1px solid lime; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-image: url('../assets/movie-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    font-family: "Raleway";
+    padding-bottom: 70px;
+    /* height: 100%; */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container {
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.search-title {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.search-content input {
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    font-family: "Raleway";
+    font-size: 20px;
+    border: 0;
+    width: 100%;
+}
+.search {
+    padding-top: 70px;
+}
+.search-input {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+.search-button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 20px;
+    transition: 0.2s;
+}
+.search-button:hover {
+    background-color: #b4d455;
+    color: white;
+}
+.search-sort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    font-size: 15px;
+}
+.search-sort label {
+    color: white;
+}
+.search-sort select {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "Raleway";
+    background-color: white;
+    border: 0;
+    width: fit-content;
+}
+.search-sort select option {
+    font-size: 15px;
+    transition: 0.2s;
+}
+.sort-button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: white;
+    transition: 0.2s;
+}
+.sort-button:hover {
+    background-color: #b4d455;
+    color: white;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.movies-link, .watch-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.movies-link:hover, .watch-link:hover {
+    color: #b4d455;
+}
+header {
+    padding: 20px 0;
+}
+.movies {
+    padding-top: 70px;
+}
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    column-gap: 15px;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+.movie-card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.movie-card:hover {
+    scale: 1.025;
+}
+.movie-text {
+    padding: 10px 15px;
+}
+.movie-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+.movie-date {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.movie-desc {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.movie-img {
+    width: 100%;
+    /* height: 50%; */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.details {
+    padding-top: 70px;
+    font-size: 20px;
+    line-height: 1.4;
+    display: none;
+}
+.details-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 85%;
+    margin: 0 auto;
+    color: white;
+    padding: 20px 30px;
+}
+.details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.details-left {
+    width: 70%;
+}
+.details-poster {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.details-time img {
+    height: 20px;
+}
+.details-time {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 10px;
+}
+.details-title {
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.details-rating, .details-date {
+    margin-top: 10px;
+}
+.details-synopsis {
+    margin-top: 10px;
+}
+.details-synopsis h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.cast-and-crew {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: white;
+    margin-top: 40px;
+}
+.cast, .crew {
+    width: 50%;
+}
+.cast-and-crew h1 {
+    /* text-align: center; */
+    font-weight: 700;
+    font-size: 30px;
+}
+.cast-and-crew ul li {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.watchlist-title {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.watchlist-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 16%);
+    justify-content: space-between;
+    /* column-gap: 20px; */
+    row-gap: 30px;
+    /* margin-bottom: 40px; */
+    /* display: none; */
+}
+.watchlist-card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.watchlist-card:hover {
+    scale: 1.025;
+}
+.watchlist-text {
+    padding: 10px 15px;
+}
+.watchlist-name {
+    font-weight: 700;
+    font-size: 20px;
+}
+.watchlist-date {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.watchlist-desc {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.watchlist-img {
+    width: 100%;
+    /* height: 50%; */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.watchlist {
+    padding-top: 70px;
+    display: none;
+}
+@media (max-width: 425px) {
+    .search-input {
+        flex-direction: column;
+        width: 100%;
+    }
+    .search-button {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .search-input input {
+        width: 80%;
+    }
+}

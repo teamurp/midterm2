@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-left">
+                    <input type="text" placeholder="Enter city name" class="header-input">
+                    <div class="header-button" onclick="getWeather()">
+                        Search
+                    </div>
+                </div>
+                <div class="header-right">
+                    <select name="" id="selectUnit">
+                        <option value="celcius">Celcius °C</option>
+                        <option value="fahrenheit">Fahrenheit °F</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="main-wrapper">
+                <div class="main-today">
+                    <p class="today-location">Location:</p>
+                    <div class="today-wrapper">
+                        <div class="today-left">
+                            <p class="today-temp">17°C</p>
+                            <div class="today-details">
+                                <p class="today-humidity">Humidity: 70%</p>
+                                <p class="today-wind">Wind: 5 m/s</p>
+                                <p class="today-condition">Cloudy</p>
+                            </div>
+                        </div>
+                        <img src="" alt="" class="today-icon">
+                    </div>
+                </div>
+                <div class="main-forecast">
+                    <p class="forecast-title">5-day forecast in Almaty</p>
+                    <div class="forecast-wrapper">
+                        <div class="forecast-day">
+                            <p class="forecast-date">13 November</p>
+                            <img src="" alt="">
+                            <p class="forecast-temp">17°C / 8°C</p>
+                            <p class="forecast-condition">Cloudy</p>
+                        </div>
+                        <div class="forecast-day">
+                            <p class="forecast-date">13 November</p>
+                            <img src="" alt="">
+                            <p class="forecast-temp">17°C / 8°C</p>
+                            <p class="forecast-condition">Cloudy</p>
+                        </div>
+                        <div class="forecast-day">
+                            <p class="forecast-date">13 November</p>
+                            <img src="" alt="">
+                            <p class="forecast-temp">17°C / 8°C</p>
+                            <p class="forecast-condition">Cloudy</p>
+                        </div>
+                        <div class="forecast-day">
+                            <p class="forecast-date">13 November</p>
+                            <img src="" alt="">
+                            <p class="forecast-temp">17°C / 8°C</p>
+                            <p class="forecast-condition">Cloudy</p>
+                        </div>
+                        <div class="forecast-day">
+                            <p class="forecast-date">13 November</p>
+                            <img src="" alt="">
+                            <p class="forecast-temp">17°C / 8°C</p>
+                            <p class="forecast-condition">Cloudy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

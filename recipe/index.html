@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul>
+                <li>
+                    <p id="recipesLink">Recipes</p>
+                </li>
+                <!-- <li>
+                    <p id="favLink">Favorites</p>
+                </li> -->
+            </ul>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="main-content">
+                <div class="main-title">
+                    Look for any recipes
+                </div>
+                <div class="main-search">
+                    <input type="text" placeholder="recipe name or ingredients" class="search-input">
+                    <div class="main-button" onclick="searchRecipes()">
+                        Search
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recipes">
+        <div class="container">
+            <div class="recipes-grid">
+
+            </div>
+        </div>
+    </section>
+    <section class="favorites">
+        <div class="container">
+            <div class="favorites-title">
+                My favorites
+            </div>
+            <div class="favorites-grid">
+                <div class="fav-card">
+                    <img src="../assets/star-empty.svg" alt="" class="fav-star" title="Add to favorites">
+                    <img src="../assets/car.png" alt="" class="fav-img">
+                    <div class="fav-text">
+                        <div class="fav-name">
+                            poo poo
+                        </div>
+                        <div class="fav-time">
+                            <img src="../assets/clock.svg" alt="">
+                            <p>15 min</p>
+                        </div>
+                        <div class="fav-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, vitae.
+                        </div>
+                    </div>
+                </div>
+                <div class="fav-card">
+                    <img src="../assets/star-empty.svg" alt="" class="fav-star" title="Add to favorites">
+                    <img src="../assets/car.png" alt="" class="fav-img">
+                    <div class="fav-text">
+                        <div class="fav-name">
+                            poo poo
+                        </div>
+                        <div class="fav-time">
+                            <img src="../assets/clock.svg" alt="">
+                            <p>15 min</p>
+                        </div>
+                        <div class="fav-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, vitae.
+                        </div>
+                    </div>
+                </div>
+                <div class="fav-card">
+                    <img src="../assets/star-empty.svg" alt="" class="fav-star" title="Add to favorites">
+                    <img src="../assets/car.png" alt="" class="fav-img">
+                    <div class="fav-text">
+                        <div class="fav-name">
+                            poo poo
+                        </div>
+                        <div class="fav-time">
+                            <img src="../assets/clock.svg" alt="">
+                            <p>15 min</p>
+                        </div>
+                        <div class="fav-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, vitae.
+                        </div>
+                    </div>
+                </div>
+                <div class="fav-card">
+                    <img src="../assets/star-empty.svg" alt="" class="fav-star" title="Add to favorites">
+                    <img src="../assets/car.png" alt="" class="fav-img">
+                    <div class="fav-text">
+                        <div class="fav-name">
+                            poo poo
+                        </div>
+                        <div class="fav-time">
+                            <img src="../assets/clock.svg" alt="">
+                            <p>15 min</p>
+                        </div>
+                        <div class="fav-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, vitae.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="details">
+        <div class="container">
+            <div class="details-box">
+                <img src="../assets/car.png" alt="" class="details-img">
+                <div class="details-wrapper">
+                    <div class="details-left">
+                        <img src="../assets/cross.svg" alt="" class="details-cross">
+                        <div class="details-text">
+                            <div class="details-name">
+                                <p id="detailsName">Recipe name</p>
+                                <img src="../assets/star-empty-black.svg" alt="" title="Add to favorites" class="details-star">
+                            </div>
+                            <div class="details-time">
+                                <img src="../assets/clock.svg" alt="">
+                                <p id="detailsTime">15 min</p>
+                            </div>
+                            <div class="details-desc">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, officiis?
+                            </div>
+                            <div class="details-ingredients">
+                                <p>Ingredients:</p>
+                                <ul id="ingredients">
+            
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-right">
+                        <div class="details-info">
+                            <ul id="nutrition">
+                                
+                            </ul>
+                        </div>
+                        <div class="details-steps">
+                            <p>Directions:</p>
+                            <ul id="steps">
+        
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

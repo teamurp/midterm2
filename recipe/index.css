@@ -1,0 +1,391 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    /* border: 1px solid lime; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-image: url('../assets/recipe-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: auto center;
+    background-attachment: fixed;
+    position: relative;
+    font-family: "Raleway";
+    z-index: 0;
+    padding-bottom: 70px;
+    /* height: 100%; */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container {
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.main-title {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 70px;
+}
+section {
+    position: relative;
+    z-index: 2;
+}
+.main-content input {
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    font-family: "Raleway";
+    font-size: 20px;
+    border: 0;
+    width: 100%;
+}
+.main {
+    padding-top: 70px;
+}
+.main-search {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+.main-button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: white;
+    font-family: "Raleway";
+    font-size: 20px;
+    transition: 0.2s;
+}
+.main-button:hover {
+    background-color: #b4d455;
+    color: white;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+header ul li p {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+}
+header ul li p:hover {
+    color: #b4d455;
+}
+header {
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+    /* width: 80%;
+    margin: 0 auto; */
+}
+.recipes {
+    padding-top: 70px;
+}
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-between;
+    column-gap: 15px;
+    row-gap: 30px;
+}
+.recipe-card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    /* width: 25%; */
+    position: relative;
+    transition: 0.2s;
+}
+.recipe-card:hover {
+    scale: 1.025;
+}
+.recipe-text {
+    padding: 10px 15px;
+}
+.recipe-name {
+    font-weight: 700;
+    font-size: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.recipe-time {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.recipe-desc {
+    margin-top: 10px;
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.recipe-time img {
+    height: 20px;
+}
+.recipe-img {
+    width: 100%;
+    /* height: 50%; */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.recipe-star {
+    position: absolute;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+    transition: 0.2s;
+}
+.recipe-star:hover {
+    scale: 1.2;
+}
+.details {
+    padding-top: 70px;
+    font-size: 20px;
+    line-height: 1.4;
+    display: none;
+}
+.details-box {
+    background-color: white;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px 30px;
+}
+.details-left, .details-right {
+    width: 50%;
+}
+.details-img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.details-time img {
+    height: 20px;
+}
+.details-time {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+.details-name {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.details-name img {
+    height: 40px;
+    transition: 0.2s;
+}
+.details-name img:hover {
+    scale: 1.2;
+}
+.details-desc {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.details-desc a {
+    text-decoration: none;
+    color: #b4d455;
+}
+.details-ingredients ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    list-style: circle;
+    padding-left: 30px;
+}
+.details-ingredients p {
+    font-weight: 700;
+}
+.details-steps {
+    margin-top: 15px;
+}
+.details-steps p {
+    font-weight: 700;
+}
+.details-steps ul {
+    margin-top: 15px;
+}
+.details-steps ul li {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.details-desc {
+    margin-bottom: 20px;
+    word-break: break-all;
+}
+.details-info span {
+    font-weight: 700;
+}
+.details-info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.details-cross {
+    position: absolute;
+    height: 20px;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+    transition: 0.2s;
+}
+.details-cross:hover {
+    scale: 1.2;
+}
+.favorites-title {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.fav-card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    /* width: 25%; */
+    position: relative;
+    transition: 0.2s;
+}
+.fav-card:hover {
+    scale: 1.025;
+}
+.fav-text {
+    padding: 10px 15px;
+}
+.fav-name {
+    font-weight: 700;
+    font-size: 25px;
+}
+.fav-time {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.fav-desc {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.fav-time img {
+    height: 20px;
+}
+.fav-img {
+    width: 100%;
+    /* height: 50%; */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.fav-star {
+    position: absolute;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+    transition: 0.2s;
+}
+.fav-star:hover {
+    scale: 1.2;
+}
+.favorites-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 23.75%);
+    justify-content: space-between;
+    /* column-gap: 20px; */
+    row-gap: 30px;
+    /* margin-bottom: 40px; */
+    /* display: none; */
+}
+.favorites {
+    padding-top: 70px;
+    display: none;
+}
+
+@media (max-width: 425px) {
+    .main-search {
+        flex-direction: column;
+    }
+    .main-search input {
+        width: 80%;
+    }
+    .main-button {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .details-wrapper {
+        flex-direction: column;
+    }
+    .details-left, .details-right {
+        width: 100%;
+    }
+}
